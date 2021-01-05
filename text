@@ -1,0 +1,37 @@
+to remove nginx everything : use : sudo apt-get purge nginx nginx-common then sudo apt-get autoremove
+sudo nano /usr/local/openresty/nginx/sites/default.conf
+
+docker image prune -a deleating all images 
+===============================================
+accessing digital ocean: 
+===============================================
+
+1: cd smashive/sshKey/
+2: open terminal
+3: ssh -i ./hivekey root@206.189.193.55
+4: ng build --prod
+5: cd /anabi-dw/front-end/dist/front-end# http-server -p 80 
+6: if you want to kill process >: ps -eaf | grep http-server
+make sure to give docker permission use  >>>>>sudo chmod 666 /var/run/docker.sock
+
+nginx directory >> cd etc/nginx/ sudo nano nginx.conf 
+===============================================
+requirement for SDP subscription
+===============================================
+1= need service IP address and SOAP port number for Service provider  and send this http://IP:Port/SubscribeManageService/services/SubscribeManage 
+===============================================
+configuration link
+===============================================
+https://www.digitalocean.com/community/tutorials/how-to-use-the-openresty-web-framework-for-nginx-on-ubuntu-16-04
+
+
+===============================================
+configuration and deployment sequence
+============================================
+login to droplate: ssh -i ./hivekey root@206.189.193.55
+****copy all your buildprod dist folder to openresty html 
+>1< cp -r $anabi-dw-v1/frontend/dist/ cp -r frontend/* usr/local/openresty/nginx/html/default
+>2< $sudo nano /usr/local/openresty/nginx/sites/default.conf ///// change your port and proxy_pass
+>3<  then reload $sudo systemctl restart openresty
+>4< $cd anabi-dw-v1/ git pull
+
