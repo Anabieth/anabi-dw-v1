@@ -1,6 +1,6 @@
 {
   "/api/*": {
-    "target": "https://sams.science.itf.llu.lv/",
+    "target": "http://anabi-smartsystems.com/",
     "changeOrigin": true,
     "logLevel": "debug"
   }
