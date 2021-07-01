@@ -1,6 +1,6 @@
 {
   "/api/*": {
-    "target": "http://anabi-smartsystems.com",
+    "target": "https://anabi-smartsystems.com/",
     "changeOrigin": true,
     "logLevel": "debug"
   }

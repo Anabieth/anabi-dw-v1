@@ -22,8 +22,8 @@ services:
       - "dwh-core"
     environment:
       - JAVA_OPTIONS=-Xmx600m
-      - AUTH0_CLIENT=8xi43gd6xDrwfCD0tiQoPAHd9m4KE7RF
-      - AUTH0_SECRET=DlUTyc5mMQDw9Ytj7Efn2gEEFb669u2Sc6_HD4n-mNMfjPK2t5uAYIcXvqZTQD-V
+      - AUTH0_CLIENT=Goi7MZiF0YCI4YAykw5gbd5Xky8s4JUj
+      - AUTH0_SECRET=v6sEKlu8WE6OVGpSXamVLEM8W9_IKSwg6eeaQJmY0qdCIrLfhfQP1j-GRDSOEL6K
 
   dwh-core:
     container_name: bees-dwh-core

@@ -39,7 +39,7 @@ export interface LatestMeasurement {
 
 export interface LatestModelValue {
   modelCode: string;
-  timestamp: string ;
+  timestamp: string;
   label: string;
   description: string;
   rawValue: any;
@@ -93,6 +93,8 @@ export class SamsNodeUtils {
         return 'fas fa-balance-scale';
       case 'voltage':
         return 'fas fa-bolt';
+      case 'audio':
+        return 'fas fa-volume-up';
       default:
         return '';
     }

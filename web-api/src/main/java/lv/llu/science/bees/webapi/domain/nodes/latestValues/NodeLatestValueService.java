@@ -34,10 +34,10 @@ public class NodeLatestValueService {
 
     @PreAuthorize("@user.isAllowedDevice(#id)")
     public void pushLatestValues(String id, String type, List<DwhValueBean> values) {
-        if (type.equals("audio")) {
+       // if (type.equals("audio")) {
             // exclude audio data from last values
-            return;
-        }
+        //    return;
+       // }
 
         Query query = new Query(where("_id").is(id));
         Update update = new Update().push("lastValues." + type)
