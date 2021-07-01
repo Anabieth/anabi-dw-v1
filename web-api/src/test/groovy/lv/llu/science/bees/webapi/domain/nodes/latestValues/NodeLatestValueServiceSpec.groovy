@@ -24,12 +24,12 @@ class NodeLatestValueServiceSpec extends Specification {
             }
     }
 
-    def "should ignore audio in last values"() {
-        when:
-            service.pushLatestValues('123', 'audio', [new DwhValueBean()] * 3)
-        then:
-            0 * operations.updateFirst(*_)
-    }
+    // def "should ignore audio in last values"() {
+    //     when:
+    //         service.pushLatestValues('123', 'audio', [new DwhValueBean()] * 3)
+    //     then:
+    //         0 * operations.updateFirst(*_)
+    // }
 
     def "should get latest values"() {
         given:
