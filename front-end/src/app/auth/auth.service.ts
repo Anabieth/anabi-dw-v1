@@ -8,10 +8,10 @@ import { TokenService } from './token.service';
 @Injectable()
 export class AuthService {
   auth0 = new auth0.WebAuth({
-    clientID: 'Goi7MZiF0YCI4YAykw5gbd5Xky8s4JUj',
-    domain: 'dev-42331gx2.us.auth0.com',
+    clientID: 'lyPzno2ttSylaWWvXFbEPKx2drvprkBg',
+    domain: 'dev-vzo4lt4wcdn54b4h.us.auth0.com',
     responseType: 'token id_token',
-    audience: 'sams-dwh-web-api',
+   // audience: 'sams-dwh-web-api',
     redirectUri: environment.origin + '/login',
     scope: 'openid profile email admin hw'
   });

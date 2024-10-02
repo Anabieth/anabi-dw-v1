@@ -6,6 +6,7 @@ task dockerImage(type: Exec, group: "Docker") {
 
     doFirst {
         if (rootProject.version.endsWith('.dirty')) {
+			print(rootProject.version)
             throw new GradleException("Invalid project version: ${rootProject.version}")
         }
     }
